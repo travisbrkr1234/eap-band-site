@@ -84,11 +84,28 @@
         <div class="banner-bg" id="top">
             <div class="banner-overlay"></div>
             <div class="welcome-text">
-                <h2>Where did they crumb from?</h2>
-                <h2> crumbing soon</h2>
-                <h5>Sign up to hear more!</h5>
+
+              <!--audio controls>
+                <source src="audio\ThroughTheAgesPass2.mp3" type="audio/mpeg">
+                <source src="audio\ThroughTheAgesPass2.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio-->
+
+            <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+              <source type="audio/mp3" src="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/ThroughTheAgesPass2.mp3">
+                Sorry, your browser does not support HTML5 audio.
+              </audio>
+              <ul id="playlist">
+                <li class="active"><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/ThroughTheAgesPass2.mp3">Through The Ages</a></li>
+                <li><a href="">Not Helpful</a></li>
+                <li><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/BathroomStallsFinalPass2.mp3">Bathroom Stalls</a></li>
+                <li><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/TriumphanyFinalMixDown.mp3">Triumphany</a></li>
+              </ul>
+              <h2>Where did they crumb from?</h2>
+              <h2> crumbing soon</h2>
+              <h5>Sign up to hear more!</h5>
             </div>
-        </div>
+          </div>
 
         <!-- MAIN CONTENT -->
         <div class="main-content">
@@ -233,6 +250,7 @@
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/min/plugins.min.js"></script>
         <script src="js/min/main.min.js"></script>
+        <!--script src="./js/audio.js"></script-->
 
     </body>
 </html>

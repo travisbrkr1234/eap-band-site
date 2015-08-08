@@ -141,6 +141,7 @@ button,
 input {
   line-height: normal;
   *overflow: visible;
+  width: 15em;
 }
 
 button::-moz-focus-inner,
@@ -168,6 +169,7 @@ input[type="search"]:-webkit-search-decoration {
 textarea {
   overflow: auto;
   vertical-align: top;
+  width: 15em;
 }
 
 /*---------------------------------------------------------
@@ -179,6 +181,7 @@ body {
   color: #777777;
   font-family: 'robotoregular';
   overflow-x: hidden;
+  background: #262C32;
 }
 
 a {
@@ -336,7 +339,7 @@ h3.profile-title {
 
 .social-icons {
   display: block;
-  padding: 30px 40px;
+  padding: 25px 40px;
 }
 .social-icons li {
   display: inline-block;
@@ -567,9 +570,7 @@ h3.profile-title {
  5. Audio Player
 -------------------------------------------------------- */
 #playlist,audio {
-  background:#666;
   width:400px;
-  padding:20px;
 }
 
 .active a {
@@ -579,11 +580,66 @@ h3.profile-title {
 
 li a {
   color:#eeeedd;
-  background:#333;
+  background:none;
   padding:5px;
   display:block;
 }
 
 li a:hover {
   text-decoration:none;
+}
+
+#songs {
+    background: #242225;
+}
+----
+7. contact-form
+-----
+form {
+  display: inline-block;
+}
+
+ .infusion-field1 {
+  margin: 5px;
+}
+
+.infusion-field2 {
+  margin: 5px;
+}
+
+.infusion-field3 {
+  margin: 5px;
+}
+
+.infusion-field4 {
+  margin: 5px;
+}
+
+#gobutton {
+  height: 2.5em;
+  width: 10em;
+  background: #708090;
+  background-image: -webkit-linear-gradient(top, #708090, #556169);
+  background-image: -moz-linear-gradient(top, #708090, #556169);
+  background-image: -ms-linear-gradient(top, #708090, #556169);
+  background-image: -o-linear-gradient(top, #708090, #556169);
+  background-image: linear-gradient(to bottom, #708090, #556169);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#gobutton:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }

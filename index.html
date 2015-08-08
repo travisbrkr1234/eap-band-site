@@ -91,15 +91,16 @@
               Your browser does not support the audio element.
             </audio-->
 
+
             <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
               <source type="audio/mp3" src="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/ThroughTheAgesPass2.mp3">
                 Sorry, your browser does not support HTML5 audio.
               </audio>
               <ul id="playlist">
-                <li class="active"><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/ThroughTheAgesPass2.mp3">Through The Ages</a></li>
-                <li><a href="">Not Helpful</a></li>
-                <li><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/BathroomStallsFinalPass2.mp3">Bathroom Stalls</a></li>
-                <li><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/TriumphanyFinalMixDown.mp3">Triumphany</a></li>
+                <li id="songs" class="active"><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/ThroughTheAgesPass2.mp3">Through The Ages</a></li>
+                <li id="songs"><a href="">Not Helpful</a></li>
+                <li id="songs"><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/BathroomStallsFinalPass2.mp3">Bathroom Stalls</a></li>
+                <li id="songs"><a href="https://s3-us-west-2.amazonaws.com/edgarallenpoesers/audio/TriumphanyFinalMixDown.mp3">Triumphany</a></li>
               </ul>
               <h2>Where did they crumb from?</h2>
               <h2> crumbing soon</h2>
@@ -119,7 +120,7 @@
                         <div class="col-md-12">
                             <h4 class="widget-title">Upcoming Shows</h4>
                             <div class="about-image">
-                                <img src="img/8.jpg" alt="about me">
+                                <img src="img/stockstage.jpg" alt="about me">
                             </div>
                             <p>Volton is free <a rel="nofollow" href="http://www.templatemo.com/page/1">responsive mobile template</a> from <span class="blue">template</span><span class="green">mo</span> website. You can use this template for any purpose. Please tell your friends about it. Thank you. Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this design. You can <strong>change menu icons</strong> by checking <a rel="nofollow" href="http://fontawesome.info/font-awesome-icon-world-map/">Font Awesome</a> (version 4). Example: <strong>&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt;</strong></p>
                             <hr>
@@ -215,7 +216,31 @@
                         </div>
                     </div>
                     <div class="row">
-                        <form action="#" method="post" class="contact-form">
+                      <form accept-charset="UTF-8" action="https://as113.infusionsoft.com/app/form/process/c5cea5db71cde9f63babbd595ba65f5f" class="infusion-form" method="POST">
+                        <input name="inf_form_xid" type="hidden" value="c5cea5db71cde9f63babbd595ba65f5f" />
+                        <input name="inf_form_name" type="hidden" value="EAP.com signup" />
+                        <input name="infusionsoft_version" type="hidden" value="1.44.0.47" />
+                        <div class="infusion-field1">
+                          <label for="inf_field_FirstName"></label>
+                          <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" type="text" placeholder="First Name" />
+                        </div>
+                        <div class="infusion-field2">
+                          <label for="inf_field_LastName"></label>
+                          <input class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" type="text" placeholder="Last Name" />
+                        </div>
+                        <div class="infusion-field3">
+                          <label for="inf_field_Email"></label>
+                          <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" type="text" placeholder="Email Address" />
+                        </div>
+                        <div class="infusion-field4">
+                          <label for="inf_custom_EapSiteMessage"></label>
+                          <textarea placeholder="Message" cols="24" id="inf_custom_EapSiteMessage" name="inf_custom_EapSiteMessage" rows="5"></textarea></div>
+                          <div class="infusion-submit">
+                            <input id="gobutton" type="submit" value="Hear me out!!" />
+                          </div>
+                        </form>
+                        <script type="text/javascript" src="https://as113.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=ce8118fdb136744392a407e9f6d3a0a5"></script>
+                        <!--form action="#" method="post" class="contact-form">
                             <fieldset class="col-md-4 col-sm-6">
                                 <input type="text" id="your-name" placeholder="Your Name...">
                             </fieldset>
@@ -232,7 +257,7 @@
                                 <input type="submit" class="button big default" value="Send Message">
                             </fieldset>
                         </form>
-                    </div> <!-- .contact-form -->
+                    </div> <contact-form -->
                     </div>
                     <hr>
 
@@ -250,7 +275,7 @@
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/min/plugins.min.js"></script>
         <script src="js/min/main.min.js"></script>
-        <!--script src="./js/audio.js"></script-->
+        <script src="./js/audio.js"></script>
 
     </body>
 </html>

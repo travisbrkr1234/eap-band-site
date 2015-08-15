@@ -11,7 +11,7 @@ function init(){
   tracks = playlist.find('li a');
   len = tracks.length - 1;
   audio[0].volume = 1.0;
-  audio[0].play();
+  audio[0].pause();
   playlist.find('a').click(function(e){
     e.preventDefault();
     link = $(this);

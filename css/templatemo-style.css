@@ -421,7 +421,7 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 260px 80px;
+  padding: 200px 80px;
   position: relative;
   background: url("../img/eapbkgrnd.jpg");
   background-repeat: no-repeat;
@@ -616,17 +616,18 @@ form {
 }
 
 #gobutton {
+  display: inline-block;
   height: 2.5em;
   width: 10em;
-  background: #708090;
-  background-image: -webkit-linear-gradient(top, #708090, #556169);
-  background-image: -moz-linear-gradient(top, #708090, #556169);
-  background-image: -ms-linear-gradient(top, #708090, #556169);
-  background-image: -o-linear-gradient(top, #708090, #556169);
-  background-image: linear-gradient(to bottom, #708090, #556169);
+  background: #D00202;
+  background-image: -webkit-linear-gradient(top, #D00202, #000);
+  background-image: -moz-linear-gradient(top, #D00202, #000);
+  background-image: -ms-linear-gradient(top, #D00202, #000);
+  background-image: -o-linear-gradient(top, #D00202, #000);
+  background-image: linear-gradient(to bottom, #D00202, #000);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
+  border-radius: .75em;
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
@@ -635,11 +636,9 @@ form {
 }
 
 #gobutton:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+  background: #000;
+}
+
+.infusion-submit {
+  padding: 12px;
 }

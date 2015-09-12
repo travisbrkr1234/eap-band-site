@@ -339,7 +339,7 @@ h3.profile-title {
 
 .social-icons {
   display: block;
-  padding: 25px 40px;
+  padding: 0px 45px;
 }
 .social-icons li {
   display: inline-block;
@@ -351,6 +351,10 @@ h3.profile-title {
 }
 .social-icons a:hover {
   color: #282e35;
+}
+
+.minicons a{
+  color: white;
 }
 
 .responsive-header {
@@ -418,12 +422,12 @@ h3.profile-title {
 
 /*---------------------------------------------------------
  4. Main Content
+  background: url("../img/eapbkgrnd.jpg");
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
   padding: 200px 80px;
   position: relative;
-  background: url("../img/eapbkgrnd.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -434,10 +438,21 @@ h3.profile-title {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(95, 109, 126, 0.4);
+  /* background: rgba(95, 109, 126, 0.4); */
   top: 0;
   left: 0;
   z-index: 3;
+}
+
+.fab {
+  color: white;
+  padding: 0 0 15px 0;
+  font-size: 1.75;
+}
+
+/* OLD
+.welcome-text div {
+    margin-left: none !important;
 }
 
 .welcome-text {
@@ -445,16 +460,15 @@ h3.profile-title {
   z-index: 4;
 }
 .welcome-text h2 {
-  font-size: 42px;
-  font-family: 'robotobold';
+  font-size: 1.75em;
+  font-family: calibri !important, 'robotobold';
   color: white;
   margin-bottom: 30px;
 }
 .welcome-text h5 {
   font-size: 22px;
   color: white;
-}
-
+} OLD */
 /*------ about us ------ */
 .about-image {
   overflow: hidden;
@@ -570,7 +584,7 @@ h3.profile-title {
  5. Audio Player
 -------------------------------------------------------- */
 #playlist,audio {
-  width:400px;
+  width:225px;
 }
 
 .active a {

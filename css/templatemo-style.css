@@ -307,7 +307,7 @@ hr {
 h3.profile-title {
   margin-bottom: 5px;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'robotobold';
 }
 
@@ -358,7 +358,7 @@ h3.profile-title {
 }
 
 .responsive-header {
-  background: #5f6d7e;
+  background: #000;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
@@ -384,7 +384,7 @@ h3.profile-title {
   }
   .responsive-header .profile-content {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 0px;
     overflow: hidden;
   }
 }
@@ -426,7 +426,7 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 200px 80px;
+  padding: 0px 0px;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -633,12 +633,7 @@ form {
   display: inline-block;
   height: 2.5em;
   width: 10em;
-  background: #D00202;
-  background-image: -webkit-linear-gradient(top, #D00202, #000);
-  background-image: -moz-linear-gradient(top, #D00202, #000);
-  background-image: -ms-linear-gradient(top, #D00202, #000);
-  background-image: -o-linear-gradient(top, #D00202, #000);
-  background-image: linear-gradient(to bottom, #D00202, #000);
+  background: #000;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: .75em;
@@ -650,9 +645,19 @@ form {
 }
 
 #gobutton:hover {
-  background: #000;
+  background: #D00202;
+  background-image: -webkit-linear-gradient(top, #63FFC7, #000);
+  background-image: -moz-linear-gradient(top, #63FFC7, #000);
+  background-image: -ms-linear-gradient(top, #63FFC7, #000);
+  background-image: -o-linear-gradient(top, #63FFC7, #000);
+  background-image: linear-gradient(to bottom, #63FFC7, #000);
 }
 
 .infusion-submit {
   padding: 12px;
+}
+
+/* embedded player style */
+iframe {
+  margin-left: 350px;
 }

@@ -1670,3 +1670,9 @@
 .fa-meanpath:before {
   content: "\f20c";
 }
+
+table.ui-datepicker-calendar tbody td.highlight > a {
+    background: url("images/ui-bg_inset-hard_55_ffeb80_1x100.png") repeat-x scroll 50% bottom #FFEB80;
+    color: #363636;
+    border: 1px solid #FFDE2E;
+}

@@ -1,7 +1,8 @@
 var events = [
   { Title: "@Club Red Doors Open at 6pm", Date: new Date("12/4/2015") },
   { Title: "Test Event Details", Date: new Date("12/9/2015") },
-  { Title: "Test Event Detailss", Date: new Date("12/16/2015") }
+  { Title: "Test Event Detailss", Date: new Date("12/16/2015") },
+  { Title: "The Record Room 6:00pm 4211 N. Scottsdale Rd", Date: new Date("02/26/2016") }
 ];
 
 $("#test").datepicker({

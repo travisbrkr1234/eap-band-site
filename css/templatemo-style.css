@@ -25,7 +25,7 @@ http://www.templatemo.com/preview/templatemo_441_volton
   font-style: normal;
 }
 /*---------------------------------------------------------
- 1. Reset
+1. Reset
 -------------------------------------------------------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -38,11 +38,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .blue {
-	color: #06C;
+  color: #06C;
 }
 
 .green {
-	color: #090;
+  color: #090;
 }
 
 main {
@@ -175,7 +175,7 @@ textarea {
 }
 
 /*---------------------------------------------------------
- 2. Basic Style
+2. Basic Style
 -------------------------------------------------------- */
 body {
   font-size: 14px;
@@ -273,7 +273,7 @@ hr {
 }
 
 /*---------------------------------------------------------
- 3. Header
+3. Header
 -------------------------------------------------------- */
 .sidebar-menu {
   float: left;
@@ -425,8 +425,8 @@ h3.profile-title {
 }
 
 /*---------------------------------------------------------
- 4. Main Content
-  background: url("../img/eapbkgrnd.jpg");
+4. Main Content
+background: url("../img/eapbkgrnd.jpg");
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
@@ -456,22 +456,22 @@ h3.profile-title {
 
 /* OLD
 .welcome-text div {
-    margin-left: none !important;
+margin-left: none !important;
 }
 
 .welcome-text {
-  position: relative;
-  z-index: 4;
+position: relative;
+z-index: 4;
 }
 .welcome-text h2 {
-  font-size: 1.75em;
-  font-family: calibri !important, 'robotobold';
-  color: white;
-  margin-bottom: 30px;
+font-size: 1.75em;
+font-family: calibri !important, 'robotobold';
+color: white;
+margin-bottom: 30px;
 }
 .welcome-text h5 {
-  font-size: 22px;
-  color: white;
+font-size: 22px;
+color: white;
 } OLD */
 /*------ about us ------ */
 .about-image {
@@ -571,7 +571,7 @@ h3.profile-title {
 }
 
 /*---------------------------------------------------------
- 5. Footer
+5. Footer
 -------------------------------------------------------- */
 #footer p.copyright-text {
   margin: 40px 0;
@@ -585,7 +585,7 @@ h3.profile-title {
 }
 
 /*---------------------------------------------------------
- 5. Audio Player
+5. Audio Player
 -------------------------------------------------------- */
 #playlist,audio {
   width:225px;
@@ -608,7 +608,7 @@ li a:hover {
 }
 
 #songs {
-    background: #242225;
+  background: #242225;
 }
 ----
 7. contact-form
@@ -617,7 +617,7 @@ form {
   display: inline-block;
 }
 
- .infusion-field1 {
+.infusion-field1 {
   margin: 5px;
 }
 
@@ -635,9 +635,10 @@ form {
 
 #gobutton {
   display: inline-block;
+  color: #fff !important;
   height: 2.5em;
   width: 10em;
-  background: #000;
+  background: transparent;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: .75em;
@@ -649,12 +650,12 @@ form {
 }
 
 #gobutton:hover {
-  background: #D00202;
-  background-image: -webkit-linear-gradient(top, #63FFC7, #000);
-  background-image: -moz-linear-gradient(top, #63FFC7, #000);
-  background-image: -ms-linear-gradient(top, #63FFC7, #000);
-  background-image: -o-linear-gradient(top, #63FFC7, #000);
-  background-image: linear-gradient(to bottom, #63FFC7, #000);
+  background: #fff;
+  background-image: -webkit-linear-gradient(top, #2F9B94, #000);
+  background-image: -moz-linear-gradient(top, #2F9B94, #000);
+  background-image: -ms-linear-gradient(top, #2F9B94, #000);
+  background-image: -o-linear-gradient(top, #2F9B94, #000);
+  background-image: linear-gradient(to bottom, #2F9B94, #000);
 }
 
 /** Infusion Additional Styling **/
@@ -669,10 +670,10 @@ form {
 
 /* embedded player style */
 .automagic {
-   min-height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 hr {
@@ -707,4 +708,290 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .details {
   display: flex;
   flex-grow: 1;
+}
+
+/*audio player additional styling and form sizing mobile friendly*/
+@media only screen and (min-width : 640px) {
+  .automagic {
+    display: none;
+  }
+  /*Displays audio player and webform on small devices*/
+  #test {
+    padding-top: 12vh;
+  }
+  .ui-datepicker {
+    font-size:2.75em !important;
+  }
+  .ui-datepicker td span, .ui-datepicker td a {
+    padding:0.72em;
+  }
+  #bigform {
+    display: inline-block;
+    margin-left: 41%;
+    margin-right: 50%;
+  }
+  input#inf_option_SignmeupforEAPNotifications {
+    margin-top: 12px;
+  }
+  .infusion-field {
+    padding: 2px;
+  }
+  input::-webkit-input-placeholder {
+    color: #2F9B94 !important;
+  }
+  .infusion-field-input-container, textarea#inf_custom_EapSiteMessage, input#inf_option_SignmeupforEAPNotifications {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e99708;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  }
+  .infusion-field-input-container:focus, textarea#inf_custom_EapSiteMessage:focus {
+  outline: none;
+  border-color: #51CBEE;
+}
+textarea {
+  max-width: 15em;
+}
+}
+
+@media only screen and (max-width : 640px) {
+  .fullsize {
+    display: none;
+  }
+}
+
+#fullgobutton {
+  display: inline-block;
+  height: 2.5em;
+  width: 10em;
+  background: transparent;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: .75em;
+  border-color:  ;
+  font-family: Arial;
+  color: #2f9b94;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#fullgobutton:hover {
+  background: #2f9b94;
+  background-image: -webkit-linear-gradient(top, #2f9b94, #000);
+  background-image: -moz-linear-gradient(top, #2f9b94, #000);
+  background-image: -ms-linear-gradient(top, #2f9b94, #000);
+  background-image: -o-linear-gradient(top, #2f9b94, #000);
+  background-image: linear-gradient(to bottom, #2f9b94, #000);
+}
+
+/*animated download*/
+.animated {
+  background-image: url(/css/images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top:95px;
+  margin-bottom:60px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}
+
+/*animated download2*/
+
+@import "compass/css3";
+
+$width:  220px;
+$height: 70px;
+$border: 4px;
+
+$violet: #6559ae;
+$orange: #ff7159;
+
+$deg:  120deg;
+$size: 400%;
+$dur:  3s;
+
+@mixin clip-frame($width, $height, $border) {
+  -webkit-clip-path: polygon(0% 100%, $border 100%, $border $border, $width - $border $border, $width - $border $height - $border, $border $height - $border, $border 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+@import url(http://fonts.googleapis.com/css?family=Squada+One);
+@import url(http://fonts.googleapis.com/css?family=Squada+One);
+#freeDownload {
+  display: block;
+  width: 220px;
+  height: 70px;
+  z-index: 1;
+}
+#freeDownload:after {
+  content: '';
+  background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
+  background-size: 400% 400%;
+  -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  -moz-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  -webkit-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+  animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
+}
+#freeDownload > span {
+  display: block;
+  background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: gradient 3s ease-in-out infinite;
+  -webkit-animation: gradient 3s ease-in-out infinite;
+  animation: gradient 3s ease-in-out infinite;
+}
+
+/* helpers */
+.absolute-centering, body:after, #freeDownload, #freeDownload:after {
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.text-formatting, #freeDownload {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 70px;
+  font-family: 'Squada One', cursive;
+  font-size: 28px;
+}
+
+/* motion */
+@-moz-keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-moz-keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+@-webkit-keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+@keyframes border {
+  0% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
+  }
+}
+
+/*Date Picker Color*/
+a.ui-state-default {
+  color:white;
+}
+
+/*span.ui-datepicker-month {
+  color:#E99708;
+}
+
+span.ui-datepicker-year {
+  color:#E99708;
+}*/
+
+a.ui-datepicker-prev.ui-corner-all::after {
+  font-family: 'FontAwesome';
+  content: '\f060';
+  color: white;
+  position: relative;
+  top: 27px;
+  left: 22px;
+}
+
+a.ui-datepicker-next.ui-corner-all::after {
+  font-family: 'FontAwesome';
+  content: '\f061';
+  color: white;
+  position: relative;
+  top: 27px;
+  left: 12px;
 }
